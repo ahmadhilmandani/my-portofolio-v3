@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-  <nav>
+  <nav class="bg-red-50 w-full h-16 border-b border-b-custom-beige-100">
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
     <iconTailwind />
