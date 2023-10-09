@@ -2,6 +2,7 @@
 import { RouterLink } from 'vue-router'
 import { IconMail, IconBrandGithub, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-vue'
 import HomeView from './views/HomeView.vue'
+import AboutMeView from './views/AboutMeView.vue';
 
 function setIconColorBlack(elementId) {
   document.getElementById(elementId).setAttribute('stroke', '#23252A')
@@ -52,7 +53,7 @@ function setIconColorBeige(elementId) {
 
   <!-- top navigation -->
   <nav
-    class="w-full h-[60px] flex justify-between items-center lg:px-20 bg-custom-beige-50 border-b border-b-custom-black-50 fixed top-0 left-0 right-0 z-[1000]">
+    class="w-full h-[60px] flex justify-between items-center lg:px-28 bg-custom-beige-50 border-b border-b-custom-black-50 fixed top-0 left-0 right-0 z-[1000]">
     <div class="flex items-center gap-2">
       <svg width="16" height="33" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -76,6 +77,7 @@ function setIconColorBeige(elementId) {
   <!-- main contenct -->
   <main>
     <HomeView />
+    <AboutMeView />
   </main>
 </template>
 
