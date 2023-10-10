@@ -1,13 +1,11 @@
 <script setup>
 import NumberingSection from '../components/numberingSection.vue';
 import PersonalProjectCard from '../components/PersonalProjectCard.vue';
-import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBrandMysql, IconBrandJavascript, IconBrandHtml5, IconBrandFigma, IconBrandCss3, IconBrandBootstrap, IconBrandFlutter } from '@tabler/icons-vue'
-
-
+import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandJavascript, IconBrandHtml5, IconBrandCss3 } from '@tabler/icons-vue'
 </script>
 
 <template>
-  <div class="w-full min-h-screen lg:px-28 pt-28">
+  <div class="w-full min-h-screen px-10 lg:px-28 pt-28">
     <NumberingSection v-motion-slide-visible-left>
       <template #number>
         3.
@@ -17,8 +15,9 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
       </template>
     </NumberingSection>
 
-    <div class="grid grid-cols-3 gap-4 mt-16">
-      <PersonalProjectCard v-motion-fade-visible link-to-code="https://github.com/ahmadhilmandani/project-planner-vue-pinia/tree/deploy"
+    <div class="lg:grid grid-cols-3 gap-4 mt-16">
+      <PersonalProjectCard v-motion-fade-visible
+        link-to-code="https://github.com/ahmadhilmandani/project-planner-vue-pinia/tree/deploy"
         link-to-site="https://simple-project-planner.netlify.app/">
         <template #thumbnail>
           <img src="../assets/images/project-planner-web.png" alt="" class="max-w-md w-full">
@@ -36,7 +35,8 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
           <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
         </template>
       </PersonalProjectCard>
-      <PersonalProjectCard v-motion-fade-visible link-to-code="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/to-do-list-part-2"
+      <PersonalProjectCard class="mt-8 lg:mt-0" v-motion-fade-visible
+        link-to-code="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/to-do-list-part-2"
         link-to-site="https://to-do-list-ahmadhilmandani.netlify.app/">
         <template #thumbnail>
           <img src="../assets/images/to-do-list-web.png" alt="" class="max-w-md w-full">
@@ -55,7 +55,8 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
           <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
         </template>
       </PersonalProjectCard>
-      <PersonalProjectCard v-motion-fade-visible linkToCode="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/main/calculator"
+      <PersonalProjectCard class="mt-8 lg:mt-0" v-motion-fade-visible
+        linkToCode="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/main/calculator"
         linkToSite="https://ahmadhilmandani.github.io/Frontendmentor-Hilman/calculator/">
         <template #thumbnail>
           <img src="../assets/images/calculator-web.png" alt="" class="max-w-md w-full">
@@ -72,9 +73,6 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
           <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
         </template>
       </PersonalProjectCard>
-
     </div>
-
-
-
-</div></template>
+  </div>
+</template>

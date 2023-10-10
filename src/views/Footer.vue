@@ -3,7 +3,7 @@ import { IconBrandGithub, IconBrandGmail, IconBrandLinkedin, IconBrandInstagram 
 </script> 
 
 <template>
-  <footer class='w-full bg-custom-black-50 lg:px-28 relative mt-48 py-12' v-motion-slide-visible-bottom>
+  <footer class='w-full bg-custom-black-50 lg:px-28 relative mt-48 py-20' v-motion-slide-visible-bottom>
     <div class='flex flex-wrap justify-center items-start gap-12 lg:gap-32 lg:p-12 p-6'>
       <svg width="100" height="200" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -34,8 +34,8 @@ import { IconBrandGithub, IconBrandGmail, IconBrandLinkedin, IconBrandInstagram 
           class="relative z-[99] hover:-translate-y-2 transition-all" target="_blank">
           <IconBrandLinkedin class="stroke-custom-green-100" />
         </a>
-        <a href="https://www.instagram.com/ahmadhilmandani/?hl=id" class="relative z-[99] hover:-translate-y-2 transition-all"
-          target="_blank">
+        <a href="https://www.instagram.com/ahmadhilmandani/?hl=id"
+          class="relative z-[99] hover:-translate-y-2 transition-all" target="_blank">
           <IconBrandInstagram class="stroke-custom-green-100" />
         </a>
       </div>

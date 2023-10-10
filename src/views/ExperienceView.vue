@@ -6,7 +6,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
 </script>
 
 <template>
-  <div class="min-h-screen lg:px-28 pt-28">
+  <div class="min-h-screen px-10 lg:px-28 pt-28">
     <NumberingSection v-motion-slide-visible-left>
       <template #number>
         2.
@@ -16,7 +16,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
       </template>
     </NumberingSection>
 
-    <div class="px-16">
+    <div class="lg:px-16">
       <ExperienceCard class="mt-24" linkHref="https://www.linkedin.com/company/habitz-id/" v-motion-fade-visible>
         <template #thumbnail>
           <img src="../assets/images/logo-habitz-2.png" alt="" class="max-w-md w-full">
