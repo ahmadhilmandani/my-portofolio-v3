@@ -8,7 +8,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
 
 <template>
   <div class="w-full min-h-screen lg:px-28 pt-28">
-    <NumberingSection>
+    <NumberingSection v-motion-slide-visible-left>
       <template #number>
         3.
       </template>
@@ -18,7 +18,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
     </NumberingSection>
 
     <div class="grid grid-cols-3 gap-4 mt-16">
-      <PersonalProjectCard link-to-code="https://github.com/ahmadhilmandani/project-planner-vue-pinia/tree/deploy"
+      <PersonalProjectCard v-motion-fade-visible link-to-code="https://github.com/ahmadhilmandani/project-planner-vue-pinia/tree/deploy"
         link-to-site="https://simple-project-planner.netlify.app/">
         <template #thumbnail>
           <img src="../assets/images/project-planner-web.png" alt="" class="max-w-md w-full">
@@ -36,7 +36,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
           <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
         </template>
       </PersonalProjectCard>
-      <PersonalProjectCard link-to-code="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/to-do-list-part-2"
+      <PersonalProjectCard v-motion-fade-visible link-to-code="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/to-do-list-part-2"
         link-to-site="https://to-do-list-ahmadhilmandani.netlify.app/">
         <template #thumbnail>
           <img src="../assets/images/to-do-list-web.png" alt="" class="max-w-md w-full">
@@ -55,7 +55,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
           <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
         </template>
       </PersonalProjectCard>
-      <PersonalProjectCard linkToCode="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/main/calculator"
+      <PersonalProjectCard v-motion-fade-visible linkToCode="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/main/calculator"
         linkToSite="https://ahmadhilmandani.github.io/Frontendmentor-Hilman/calculator/">
         <template #thumbnail>
           <img src="../assets/images/calculator-web.png" alt="" class="max-w-md w-full">

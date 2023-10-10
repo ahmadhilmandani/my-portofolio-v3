@@ -5,7 +5,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
 
 <template>
   <div class="min-h-screen px-10 lg:px-28 pt-28">
-    <NumberingSection>
+    <NumberingSection v-motion-slide-visible-left>
       <template #number>
         1.
       </template>
@@ -13,7 +13,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
         About Me!
       </template>
     </NumberingSection>
-    <div class="flex flex-col-reverse items-center lg:items-start lg:flex-row lg:justify-between mt-14">
+    <div class="flex flex-col-reverse items-center lg:items-start lg:flex-row lg:justify-between mt-14" v-motion-fade-visible>
       <div class="md:w-4/6 md:px-0 px-10 mt-8 lg:mt-0">
         <p class="text-[20px]">
           Hello, there! i'm Hilman, an undergraduate student of Informatics Engineering in UPN Veteran Jawa Timur with a

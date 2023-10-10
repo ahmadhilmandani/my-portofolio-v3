@@ -7,7 +7,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
 
 <template>
   <div class="min-h-screen lg:px-28 pt-28">
-    <NumberingSection>
+    <NumberingSection v-motion-slide-visible-left>
       <template #number>
         2.
       </template>
@@ -17,7 +17,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
     </NumberingSection>
 
     <div class="px-16">
-      <ExperienceCard class="mt-24" linkHref="https://www.linkedin.com/company/habitz-id/">
+      <ExperienceCard class="mt-24" linkHref="https://www.linkedin.com/company/habitz-id/" v-motion-fade-visible>
         <template #thumbnail>
           <img src="../assets/images/logo-habitz-2.png" alt="" class="max-w-md w-full">
         </template>
@@ -36,7 +36,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
             <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
         </template>
       </ExperienceCard>
-      <ExperienceCard class="mt-24" linkHref="https://www.linkedin.com/posts/ahmad-hilman-dani_peduly-intern-thank-you-bismillah-activity-7086734537199677440-z4Zd?utm_source=share&utm_medium=member_desktop">
+      <ExperienceCard class="mt-24" linkHref="https://www.linkedin.com/posts/ahmad-hilman-dani_peduly-intern-thank-you-bismillah-activity-7086734537199677440-z4Zd?utm_source=share&utm_medium=member_desktop" v-motion-fade-visible>
         <template #thumbnail>
           <img src="../assets/images/peduly.png" alt="" class="max-w-md w-full rounded-full">
         </template>
@@ -54,7 +54,7 @@ zainzo is a groundbreaking Human Management Resources website aimed at revolutio
             <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
         </template>
       </ExperienceCard>
-      <ExperienceCard class="mt-24" linkHref="https://www.linkedin.com/posts/ahmad-hilman-dani_hackfest-2023-hackfest-is-a-hackathon-activity-7044822794433417217-SwHW?utm_source=share&utm_medium=member_desktop">
+      <ExperienceCard class="mt-24" linkHref="https://www.linkedin.com/posts/ahmad-hilman-dani_hackfest-2023-hackfest-is-a-hackathon-activity-7044822794433417217-SwHW?utm_source=share&utm_medium=member_desktop" v-motion-fade-visible>
         <template #thumbnail>
           <img src="../assets/images/hackfest.jpg" alt="" class="max-w-md w-full rounded-full">
         </template>

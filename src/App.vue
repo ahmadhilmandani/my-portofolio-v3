@@ -19,7 +19,7 @@ function setIconColorBeige(elementId) {
 
 <template>
   <!-- aside navigation -->
-  <aside class="w-full hidden fixed bottom-0 px-8 md:flex justify-between items-end z-[1]">
+  <aside class="w-full hidden fixed bottom-0 px-8 md:flex justify-between items-end z-[1]" v-motion-slide-bottom>
 
     <div class="grid grid-rows-4 grid-cols-1 gap-7">
       <a href="mailto:ahmadhilmanlagi@gmail.com" target="_blank"
@@ -73,14 +73,14 @@ function setIconColorBeige(elementId) {
       <a href="#about">About Me</a>
       <a href="#experience">Experience</a>
       <a href="#personalProjects">Personal Projects</a>
-      <a href=""
+      <a  href="mailto:ahmadhilmanlagi@gmail.com" target="_blank"
         class="md:px-4 md:py-2 rounded-full bg-gradient-to-r from-custom-green-100 to-custom-green-50 font-semibold uppercase text-sm hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all">Contact</a>
     </div>
   </nav>
 
   <!-- main contenct -->
   <main class="scroll-container">
-      <HomeView id="home" />
+    <HomeView id="home" />
     <AboutMeView id="about" />
     <ExperienceView id="experience" />
     <PersonalProjectView id="personalProjects" />

@@ -3,7 +3,7 @@ import { IconBrandGithub, IconBrandGmail, IconBrandLinkedin, IconBrandInstagram 
 </script> 
 
 <template>
-  <footer class='w-full bg-custom-black-50 lg:px-28 relative mt-48 py-12'>
+  <footer class='w-full bg-custom-black-50 lg:px-28 relative mt-48 py-12' v-motion-slide-visible-bottom>
     <div class='flex flex-wrap justify-center items-start gap-12 lg:gap-32 lg:p-12 p-6'>
       <svg width="100" height="200" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
