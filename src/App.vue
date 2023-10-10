@@ -3,6 +3,9 @@ import { RouterLink } from 'vue-router'
 import { IconMail, IconBrandGithub, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-vue'
 import HomeView from './views/HomeView.vue'
 import AboutMeView from './views/AboutMeView.vue';
+import ExperienceView from './views/ExperienceView.vue';
+import PersonalProjectView from './views/PersonalProjectView.vue';
+import Footer from './views/Footer.vue';
 
 function setIconColorBlack(elementId) {
   document.getElementById(elementId).setAttribute('stroke', '#23252A')
@@ -16,7 +19,7 @@ function setIconColorBeige(elementId) {
 
 <template>
   <!-- aside navigation -->
-  <aside class="w-full fixed bottom-0 px-8 flex justify-between items-end z-[1]">
+  <aside class="w-full hidden fixed bottom-0 px-8 md:flex justify-between items-end z-[1]">
 
     <div class="grid grid-rows-4 grid-cols-1 gap-7">
       <a href="mailto:ahmadhilmanlagi@gmail.com" target="_blank"
@@ -53,7 +56,7 @@ function setIconColorBeige(elementId) {
 
   <!-- top navigation -->
   <nav
-    class="w-full h-[60px] flex justify-between items-center lg:px-28 bg-custom-beige-50 border-b border-b-custom-black-50 fixed top-0 left-0 right-0 z-[1000]">
+    class="w-full h-[60px] flex justify-between items-center px-10 md:px-20 lg:px-28 bg-custom-beige-50 border-b border-b-custom-black-50 fixed top-0 left-0 right-0 z-[1000]">
     <div class="flex items-center gap-2">
       <svg width="16" height="33" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -65,25 +68,35 @@ function setIconColorBeige(elementId) {
       </svg>
       <h1 class="text-2xl">hilman</h1>
     </div>
-    <div class="flex lg:gap-x-16 items-center">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About Me</RouterLink>
-      <RouterLink to="/about">Experience</RouterLink>
+    <div class="hidden md:flex md:gap-x-10 lg:gap-x-16 items-center">
+      <a href="#home" class="visited :bg-red-500">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#experience">Experience</a>
+      <a href="#personalProjects">Personal Projects</a>
       <a href=""
-        class="lg:px-4 lg:py-2 rounded-full bg-gradient-to-r from-custom-green-100 to-custom-green-50 font-semibold uppercase text-sm hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all">Contact</a>
+        class="md:px-4 md:py-2 rounded-full bg-gradient-to-r from-custom-green-100 to-custom-green-50 font-semibold uppercase text-sm hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all">Contact</a>
     </div>
   </nav>
 
   <!-- main contenct -->
-  <main>
-    <HomeView />
-    <AboutMeView />
+  <main class="scroll-container">
+      <HomeView id="home" />
+    <AboutMeView id="about" />
+    <ExperienceView id="experience" />
+    <PersonalProjectView id="personalProjects" />
   </main>
+
+  <!-- footer -->
+  <Footer />
 </template>
 
-<style scoped>
+<style>
 .vertical-text {
   writing-mode: vertical-lr;
   text-orientation: mixed;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 </style>

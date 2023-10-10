@@ -4,7 +4,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
 </script>
 
 <template>
-  <div class="min-h-screen lg:px-28 pt-28">
+  <div class="min-h-screen px-10 lg:px-28 pt-28">
     <NumberingSection>
       <template #number>
         1.
@@ -13,8 +13,8 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
         About Me!
       </template>
     </NumberingSection>
-    <div class="flex justify-between mt-14">
-      <div class="w-4/6">
+    <div class="flex flex-col-reverse items-center lg:items-start lg:flex-row lg:justify-between mt-14">
+      <div class="md:w-4/6 md:px-0 px-10 mt-8 lg:mt-0">
         <p class="text-[20px]">
           Hello, there! i'm Hilman, an undergraduate student of Informatics Engineering in UPN Veteran Jawa Timur with a
           passion for mastering frontend web development and UX design.
@@ -29,45 +29,45 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandNuxt, IconBra
           Here are a few technologies I’ve been working with :
         </p>
 
-        <ul class="list-disc grid grid-cols-3 grid-rows-4">
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandVue size="24" stroke-width="2" color="#23252A"/>
+        <ul class="list-disc grid grid-cols-3 grid-rows-4 gap-10 mt-4">
+          <li>
+            <IconBrandVue size="28" stroke-width="2.1" class="stroke-custom-green-100"/>
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-sky-600 hover:to-sky-300 hover:shadow-lg hover:shadow-sky-500/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandReact size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandReact size="28" stroke-width="2.1" class="stroke-sky-400" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandNuxt size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandNuxt size="28" stroke-width="2.1" class="stroke-custom-green-100" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-sky-400 hover:to-cyan-300 hover:shadow-lg hover:shadow-sky-400/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandTailwind size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandTailwind size="28" stroke-width="2.1" class="stroke-cyan-400" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-yellow-300 hover:to-yellow-200 hover:shadow-lg hover:shadow-yellow-300/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandJavascript size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandJavascript size="28" stroke-width="2.1" class="stroke-amber-500" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-rose-500 hover:to-rose-300 hover:shadow-lg hover:shadow-rose-500/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandFigma size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandFigma size="28" stroke-width="2.1" class="stroke-rose-400" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-200 hover:shadow-lg hover:shadow-custom-green-500/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandCss3 size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandCss3 size="28" stroke-width="2.1" class="stroke-sky-400" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-violet-500 hover:to-violet-300 hover:shadow-lg hover:shadow-violet-500/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandBootstrap size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandBootstrap size="28" stroke-width="2.1" class="stroke-violet-500" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-300 hover:shadow-lg hover:shadow-orange-500/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandHtml5 size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandHtml5 size="28" stroke-width="2.1" class="stroke-orange-600" />
           </li>
-          <li class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-orange-300 hover:shadow-lg hover:shadow-cyan-500/50 shadow- hover:-translate-y-1 transition-all w-fit mt-4 relative z-[2]">
-            <IconBrandMysql size="24" stroke-width="2" color="#23252A" />
+          <li>
+            <IconBrandMysql size="28" stroke-width="2.1" class="stroke-cyan-600" />
           </li>
         </ul>
       </div>
 
       <div class="flex-1 grid grid-cols-1 grid-rows-1 gap-4">
         <img src="../assets/images/google1.jpg" alt=""
-          class="rounded-full h-full justify-self-end hover:scale-[1.05] hover:-translate-x-4 hover:-translate-y-2 relative z-50 transition-all">
+          class="rounded-full w-64 md:w-80 lg:w-auto lg:h-full justify-self-end hover:scale-[1.05] hover:-translate-x-4 hover:-translate-y-2 relative z-50 transition-all">
         <img src="../assets/images/google2.jpg" alt=""
-          class="rounded-full w-52 hover:scale-[1.05] hover:-translate-x-4 hover:-translate-y-2 relative z-50 transition-all self-start">
+          class="hidden lg:block rounded-full w-52 hover:scale-[1.05] hover:-translate-x-4 hover:-translate-y-2 relative z-50 transition-all self-start">
       </div>
 
     </div>
