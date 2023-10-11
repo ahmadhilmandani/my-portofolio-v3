@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-4 items-center relative">
+  <div class="flex gap-4 items-center relative px-0 md:px-24 lg:px-0">
     <h1 class="text-4xl md:text-6xl relative">
       <slot name="number" class="relative z-50">1.</slot>
       <div

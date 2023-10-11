@@ -5,7 +5,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandJavascript, I
 </script>
 
 <template>
-  <div class="w-full min-h-screen px-10 lg:px-28 pt-28">
+  <div class="w-full min-h-screen px-4 lg:px-28 pt-28 2xl:p-40 relative z-50">
     <NumberingSection v-motion-slide-visible-left>
       <template #number>
         3.
@@ -20,7 +20,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandJavascript, I
         link-to-code="https://github.com/ahmadhilmandani/project-planner-vue-pinia/tree/deploy"
         link-to-site="https://simple-project-planner.netlify.app/">
         <template #thumbnail>
-          <img src="../assets/images/project-planner-web.png" alt="" class="max-w-md w-full">
+          <img src="../assets/images/project-planner-web.png" alt="" class="max-w-md w-full 2xl:max-w-xl">
         </template>
         <template #title>
           Project Planner
@@ -39,7 +39,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandJavascript, I
         link-to-code="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/to-do-list-part-2"
         link-to-site="https://to-do-list-ahmadhilmandani.netlify.app/">
         <template #thumbnail>
-          <img src="../assets/images/to-do-list-web.png" alt="" class="max-w-md w-full">
+          <img src="../assets/images/to-do-list-web.png" alt="" class="max-w-md w-full 2xl:max-w-xl">
         </template>
         <template #title>
           To Do List
@@ -59,7 +59,7 @@ import { IconBrandVue, IconBrandReact, IconBrandTailwind, IconBrandJavascript, I
         linkToCode="https://github.com/ahmadhilmandani/Frontendmentor-Hilman/tree/main/calculator"
         linkToSite="https://ahmadhilmandani.github.io/Frontendmentor-Hilman/calculator/">
         <template #thumbnail>
-          <img src="../assets/images/calculator-web.png" alt="" class="max-w-md w-full">
+          <img src="../assets/images/calculator-web.png" alt="" class="max-w-md w-full 2xl:max-w-xl">
         </template>
         <template #title>
           Calculator App

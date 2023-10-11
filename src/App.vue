@@ -20,27 +20,27 @@ const openMenuHumbergur = ref(false)
 
 <template>
   <!-- aside navigation -->
-  <aside class="w-full hidden fixed bottom-0 px-8 md:flex justify-between items-end" v-motion-slide-bottom>
+  <aside class="w-full hidden fixed bottom-0 px-8 md:flex justify-between items-end z-[1]" v-motion-slide-bottom>
     <div class="grid grid-rows-4 grid-cols-1 gap-7">
-      <a href="mailto:ahmadhilmanlagi@gmail.com" target="_blank"
-        class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all"
+      <a href="mailto:ahmadhilmanlagi@gmail.com" target="_blank" 
+        class="bg-custom-beige-100 rounded-lg 2xl:rounded-xl p-2 2xl:p-3 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all w-10 2xl:w-16 aspect-square"
         @mouseenter="() => { setIconColorBlack('email') }" @mouseleave="() => { setIconColorBeige('email') }">
-        <IconMail size="20" stroke-width="2" color="#F5F4EF" id="email" />
+        <IconMail size="100%" stroke-width="2" color="#F5F4EF" id="email" />
       </a>
       <a href="https://github.com/ahmadhilmandani" target="_blank"
-        class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all"
+        class="bg-custom-beige-100 rounded-lg 2xl:rounded-xl p-2 2xl:p-3 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all w-10 2xl:w-16 aspect-square"
         @mouseenter="() => { setIconColorBlack('github') }" @mouseleave="() => { setIconColorBeige('github') }">
-        <IconBrandGithub size="20" stroke-width="2" color="#F5F4EF" id="github" />
+        <IconBrandGithub size="100%" stroke-width="2" color="#F5F4EF" id="github" />
       </a>
       <a href="https://www.linkedin.com/in/ahmad-hilman-dani/" target="_blank"
-        class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all"
+        class="bg-custom-beige-100 rounded-lg 2xl:rounded-xl p-2 2xl:p-3 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all w-10 2xl:w-16 aspect-square"
         @mouseenter="() => { setIconColorBlack('linkedin') }" @mouseleave="() => { setIconColorBeige('linkedin') }">
-        <IconBrandLinkedin size="20" stroke-width="2" color="#F5F4EF" id="linkedin" />
+        <IconBrandLinkedin size="100%" stroke-width="2" color="#F5F4EF" id="linkedin" />
       </a>
       <a href="https://www.instagram.com/ahmadhilmandani/" target="_blank"
-        class="bg-custom-beige-100 rounded-lg p-2 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all"
+        class="bg-custom-beige-100 rounded-lg 2xl:rounded-xl p-2 2xl:p-3 hover:bg-gradient-to-r hover:from-custom-green-100 hover:to-custom-green-50 hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all w-10 2xl:w-16 aspect-square"
         @mouseenter="() => { setIconColorBlack('instagram') }" @mouseleave="() => { setIconColorBeige('instagram') }">
-        <IconBrandInstagram size="20" stroke-width="2" color="#F5F4EF" id="instagram" />
+        <IconBrandInstagram size="100%" stroke-width="2" color="#F5F4EF" id="instagram" />
       </a>
       <div class="w-[1.8px] h-56 bg-custom-beige-100 mx-auto"></div>
     </div>
@@ -55,7 +55,7 @@ const openMenuHumbergur = ref(false)
 
   <!-- top navigation -->
   <nav
-    class="w-full h-[60px] flex justify-between items-center px-10 md:px-20 lg:px-28 bg-custom-beige-50 border-b border-b-custom-black-50 fixed top-0 left-0 right-0 z-[1000]">
+    class="w-full h-[60px] 2xl:h-[80px] flex justify-between items-center px-4 md:px-20 lg:px-28 bg-custom-beige-50 border-b border-b-custom-black-50 fixed top-0 left-0 right-0 z-[1000]">
     <a href="#home">
       <div class="flex items-center gap-2">
         <svg width="16" height="33" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,12 +70,12 @@ const openMenuHumbergur = ref(false)
       </div>
     </a>
     <div class="hidden md:flex md:gap-x-10 lg:gap-x-16 items-center">
-      <a href="#home" class="visited :bg-red-500">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#experience">Experience</a>
-      <a href="#personalProjects">Personal Projects</a>
+      <a class="2xl:text-2xl" href="#home">Home</a>
+      <a class="2xl:text-2xl" href="#about">About Me</a>
+      <a class="2xl:text-2xl" href="#experience">Experience</a>
+      <a class="2xl:text-2xl" href="#personalProjects">Personal Projects</a>
       <a href="mailto:ahmadhilmanlagi@gmail.com" target="_blank"
-        class="md:px-4 md:py-2 rounded-full bg-gradient-to-r from-custom-green-100 to-custom-green-50 font-semibold uppercase text-sm hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all">Contact</a>
+        class="md:px-4 md:py-2 rounded-full bg-gradient-to-r from-custom-green-100 to-custom-green-50 font-semibold uppercase text-sm 2xl:text-xl hover:shadow-lg hover:shadow-custom-green-100/50 shadow- hover:-translate-y-1 transition-all">Contact</a>
     </div>
     <div class='md:hidden block'>
       <IconMenu2 id='humbergur-icon' @click="() => { openMenuHumbergur = true }" />
